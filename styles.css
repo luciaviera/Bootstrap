@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto;
+    color:white;
+}
+/*Paleta defs colores*/
+:root {
+    --darkPurple: #251934;
+    --dark: #14121b;
+    --lightBlue: #43475f;
+    --skyBlue: #71b0bb;
+    --oldPink: #db8cb5;
+    --oldPurple: #211e29;
+    --aqua: #03dac6;
+    --strongPink: #ee3e79;
+    --purple: #c38fff;
+    --grey: #1e1e1e;
+    --darkGrey: #121212;
+    --blue: #3c4e99;
+}
+
+.container-header {
+    position: sticky;
+    top: 0;
+    background-color: #261933;
+    padding: 1rem 0;
+    z-index: 3;
+    box-shadow: 0 4px 50px -20px black;
+    border: none;
+}
+header {
+    width: 1440px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 0 2rem;
+}
+body {
+    background-color: var(--dark);
+}
+main {
+    width: 1440px;
+    margin:auto;
+    padding: 2rem 0;
+}
+
+/*Cajas de secciones*/
+section {
+    background-color: var(--darkGrey);
+    padding: 2rem;
+    border-radius: 50px;
+    z-index: 2;
+    box-shadow: 0px 10px 20px 2px rgba(0, 0, 0, 0.25);
+}
+.nav-list {
+    display: flex;
+    list-style-type: none;
+}
+
+/*Caja defs codigo*/
+pre {
+    padding-bottom: 0.5rem;
+}
+.to-be-copy {
+    width: 100%;
+    display: block;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    padding-top:0.3rem;
+}
+.btn-copy {
+    top: 1rem;
+    padding: 0.25rem 0.5rem;
+    right: 1rem;
+    position: absolute;
+    background-color: var(--dark);
+    border: 1px solid var(--purple);
+    border-radius: 0.25rem;
+}
+.code {
+    position: relative;
+    margin: 0.5rem 0;
+}
+/*Colores para codigo html a copiar*/
+.code {
+    padding: 1rem 1.5rem;
+    background-color: var(--grey);
+}
+.element {
+    color: var(--oldPink);
+}
+.atr {
+    color: var(--purple);
+}
+.value {
+    color: var(--lightBlue);
+}
+.link {
+    color: var(--blue);
+}
+
+h3 {
+    color: var(--purple);
+    margin-bottom: 0.5rem;
+}
+h2{
+    margin-bottom: 1rem;
+}
+h1 {
+    text-shadow: 0 0 20px rgba(16, 11, 21, 0.8), 0 0 0 black;
+    letter-spacing: 1px;
+}

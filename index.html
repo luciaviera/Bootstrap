@@ -1,0 +1,72 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Bootstrap</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="container-header">
+        <header>
+            <h1>Bootstrap</h1>
+            <nav>
+                <ul class="nav-list">
+                    <li>Antes de usar</li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <main>
+        <section>
+            <h2>Antes de usar</h2>
+            <p>Hay varias formas de configurar Bootstrap para su uso:</p>
+            <ul>
+                <li>Descargando de forma manual los Source Files</li>
+                <li>CDN (Contnent Delivery Network)</li>
+                <li>Bower (package manager)</li>
+                <li>NPM (package manager)</li>
+            </ul>
+            <p>Es necesiario <u>jQuery</u> para todos los widgets JavaScript</p>
+            <h3>Cargar CSS</h3>
+            <p>Para cargar los estilos CSS copiar y pegar la siguiente hoja de estilo <span class="element">&lt;link&gt;</span> donde suelen ir las hojas de estilo (dentro de <span class="element">&lt;head&gt;</span>) :</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;link</span> <span class="atr">href=</span><span class="link">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"</span> <span class="atr">rel=</span><span class="value">"stylesheet"</span> <span class="atr">integrity=</span><span class="value">"sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"</span> <span class="atr">crossorigin=</span><span class="value">"anonymous"</span><span class="element">&gt;</span></pre>
+                </code>
+            </div>
+            <h3>Cargar paquete JavaScript (incluye Popper)</h3>
+            <p>Para cargar copiar el siguiente <span class="element">&lt;script&gt;</span> antes de cerrar la etiqueta <span class="element">&lt;body&gt;</span> :</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;script&gt;</span> <span class="atr">src=</span> <span class="link">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"</span> <span class="atr">integrity=</span><span class="value">"sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" </span> <span class="atr">crossorigin=</span> <span class="value">"anonymous"></span> <span class="element">&lt;/script&gt;</span></pre>
+                </code>
+            </div>
+            <h3>Configurar el documento HTML</h3>
+            <p>Bootstrap requiere el uso de HTML5:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;!doctype html&gt;</span>
+<span class="element">&lt;html </span><span class="atr">lang= </span><span class="element">&gt;</span>
+...
+<span class="element">&lt;/html&gt; </span>
+</pre>
+                </code>
+            </div>
+            <p>Al estar desarrollado <i>mobile first</i>, conviene el uso de la etiqueta meta viewport responsive dentro de <span class="element">&lt;head&gt;</span>, asi los componentes se escalan de froma adecuada: </p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;meta</span> <span class="atr">name=</span> <span class="value">"viewport"</span> <span class="atr">content=</span> <span class="value">"width=device-width, initial-scale=1"></span> <span class="element">&gt;</span></pre>
+                </code>
+            </div>
+            <p>Es relevante saber que bootstrap cambia el valor global <span class="element">box-sizeing</span> de <span class="element">content-box</span> a <span class="element">border-box</span>.</p>
+        </section>
+    </main>
+</body>
+</html>
