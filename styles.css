@@ -20,6 +20,7 @@
     --grey: #1e1e1e;
     --darkGrey: #121212;
     --blue: #3c4e99;
+    --violet: #917fce;
 }
 
 .container-header {
@@ -103,6 +104,21 @@ pre {
     color: var(--blue);
 }
 
+/*Colores titulos*/
+.subtitle {
+    color: var(--purple);
+    margin-bottom: 0.5rem;
+    margin-top:1.5rem;
+    font-size: 18px;
+}
+h5 {
+    color: var(--lightBlue);
+    margin-bottom: 0.4rem;
+}
+h4 {
+    color: var(--lightBlue);
+    margin-bottom: 0.4rem;
+}
 h3 {
     color: var(--purple);
     margin-bottom: 0.5rem;
@@ -113,4 +129,14 @@ h2{
 h1 {
     text-shadow: 0 0 20px rgba(16, 11, 21, 0.8), 0 0 0 black;
     letter-spacing: 1px;
+}
+
+/* Texto */
+p {
+    margin-bottom: 0.5rem;
+}
+
+/* Margen listas */
+.list-margin {
+    margin-left: 2rem;
 }
