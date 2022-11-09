@@ -38,7 +38,7 @@
             <div class="code">
                 <button type="button" class="btn-copy">Copiar</button>
                 <code class="to-be-copy language-html" data-lang="html">
-                    <pre><span class="element">&lt;meta</span> <span class="atr">name=</span> <span class="value">"viewport"</span> <span class="atr">content=</span> <span class="value">"width=device-width, initial-scale=1"></span> <span class="element">&gt;</span></pre>
+                    <pre><span class="element">&lt;meta</span> <span class="atr">name=</span> <span class="value">"viewport"</span> <span class="atr">content=</span> <span class="value">"width=device-width, initial-scale=1"</span> <span class="element">&gt;</span></pre>
                 </code>
             </div>
             <h3>Configurar Bootrstarp</h3>
@@ -47,7 +47,6 @@
             <ul class="list-margin">
                 <li>Descargando de forma manual los Source Files</li>
                 <li>CDN (Contnent Delivery Network)</li>
-                <li>Bower (package manager)</li>
                 <li>NPM (package manager)</li>
             </ul>
             <p>Es necesiario <u>jQuery</u> para todos los widgets JavaScript</p>
@@ -67,11 +66,18 @@
                     <pre><span class="element">&lt;script</span> <span class="atr">src=</span> <span class="link">"js/bootstrap.js"</span> <span class="element">&gt;&lt;/script&gt;</span></pre>
                 </code>
             </div>
-            <p>Hay que instalar tambien <a href="https://popper.js.org/" target="_blank">Popper</a> ya que bootstrap depende de este. Esto se puede hacer de dos formas:</p>
+            <p>Hay que instalar tambien <a href="https://popper.js.org/" target="_blank">Popper</a> ya que alunos componentes de bootstrap dependen de este. Esto se puede hacer de dos formas:</p>
             <ul class="list-margin">
                 <li>NPM (package manager)</li>
                 <li>CDN (Contnent Delivery Network)</li>
             </ul>
+            <p>Hay una 3era opcion, en vez de cargar solo JS cambiarlo por el bundle que contiene Popper. Para esto hay que copiar y pegar lo siguiente antes de cerrar la etiqueta <span class="element">&lt;body&gt;</span>:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;script</span> <span class="atr">src=</span> <span class="link">"js/bootstrap.bundle.js"</span> <span class="element">&gt;&lt;/script&gt;</span></pre>
+                </code>
+            </div>
             <h3 class="subtitle">
                 2. CDN
             </h3>
@@ -91,7 +97,31 @@
                     <pre><span class="element">&lt;script</span> <span class="atr">src=</span> <span class="link">"https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"</span> <span class="atr">integrity=</span><span class="value">"sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" </span> <span class="atr">crossorigin=</span> <span class="value">"anonymous"</span> <span class="element">&gt;&lt;/script&gt;</span></pre>
                 </code>
             </div>
+            <h3 class="subtitle"> 3. NPM </h3>
+            <ol class="list-margin">
+                <li> Abrimos la terminal y entramos a la carpeta del proyecto. </li>
+                <li> Escribimos "<span class="code-txt">npm init</span>", cuando nos pida un nombre colocamos "<span class="code-txt">bootstrap-npm</span>" y continuamos apretando enter (y salteando preguntas) hasta que se cree el archivo <span class="highlight-txt">package.json</span> . </li>
+                <li> Installamos bootstrap: En la terminal escribimos "<span class="code-txt">npm install bootstrap@5.2.2</span>", lo cual va instalar todas las dependencias dentro de <span class="highlight-txt">"node_modules"</span>. </span></li>
+                <li> Linkeamos las dependencias al documento HTML con el siguiente codigo:</li>
+            </ol>
+            <p>Para el CSS (en  <span class="element">&lt;head&gt;</span>) :</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;link</span> <span class="atr">rel=</span><span class="value">"stylesheet" </span><span class="atr">href=</span><span class="link">"node_modules/bootstrap/dist/css/bootstrap.css"</span><span class="element">&gt;</span></pre>
+                </code>
+            </div>
+            <p>Para el JavaScript, (en  <span class="element">&lt;body&gt;</span> antes de cerrarlo):</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;script</span> <span class="atr">src=</span><span class="link">"node_modules/bootstrap/dist/js/bootstrap.bundle.js"</span><span class="element">&gt;&lt;/script&gt;</span></pre>
+                </code>
+            </div>
 
+        </section>
+        <section>
+            <h2>Grid</h2>
         </section>
     </main>
 </body>
