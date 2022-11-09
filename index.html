@@ -122,6 +122,86 @@
         </section>
         <section>
             <h2>Grid</h2>
+            <h4>Container</h4>
+            <p>Lo primero que se necesita para poder trabajar con grid en bootstrap es un <i>contenedor</i>. </p>
+            <p>Ofrece varios tipos de contenedor:</p>
+            <ul class="list-margin">
+                <li><span class="code-txt">.container</span> --> ""deja margenes" ya que establece <span class="element">max-width</span> a cada breakpoint establecido.</li>
+                <li><span class="code-txt">.container-fluid</span> --> establece <span class="element">width: 100%</span> por lo que ocupa el total de el ancho disponible.</li>
+                <li><span class="code-txt">.container-{<i>breakpoint</i>}</span> --> que establece <span class="element">width: 100%</span> hasta el <i>breakpoint </i>especificado.</li>
+            </ul>
+            <p>Un ejemplo de como usarlos seria: </p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"container-fluid"</span><span class="element">&gt;</span><span class="element">&lt;/div&gt;</span></pre>
+                </code>
+            </div>
+            <h4>Creacion de filas y columnas</h4>
+            <p>En bootstrap la creacion es similar a la de las tablas en HTML, es decir, se crea una fila (<span class="code-txt">"row"</span>) y se crea cada una de las columnas (<span class="code-txt">"col"</span>) que tiene esa fila.</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"row"</span><span class="element">&gt;</span>
+                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 1<span class="element">&lt;/div&gt;</span>
+                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 2<span class="element">&lt;/div&gt;</span>
+<span class="element">&lt;/div&gt;</span></pre>
+                </code>
+            </div>
+            <p>Admite en cada fila hasta 12 columnas. Se le puede especificar un <i><span class="highlight-txt-2">tamaño especifico</span></i> a cada columna, especificando la cantidad de 1/12 que esta deberia ocupar. Por ejemplo:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col-4"</span><span class="element">&gt;</span>Columna 1<span class="element">&lt;/div&gt;</span> <span class="coment"> /* Toma el tamaño de 4/12 */</span> </pre>
+                </code>
+            </div>
+            <h3>Breakpoints</h3>
+            <p>Sirven para determinar el layout según los distintos tamaños de viewport o dispositivos. </p>
+            <table>
+                <caption><h4>Grid Tiers</h4></caption>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <colgroup></colgroup>
+                <thead>
+                    <tr>
+                        <th>Breakpoint</th>
+                        <th>Infix</th>
+                        <th>Viewport</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Extra small</td>
+                        <td><i>None</i></td>
+                        <td>&lt; 576px</td>
+                    </tr>
+                    <tr>
+                        <td>Small</td>
+                        <td class="code-txt">sm</td>
+                        <td>&ge; 576px</td>
+                    </tr>
+                    <tr>
+                        <td>Medium</td>
+                        <td class="code-txt">md</td>
+                        <td>&ge; 768px</td>
+                    </tr>
+                    <tr>
+                        <td>Large</td>
+                        <td class="code-txt">lg</td>
+                        <td>&ge; 992px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra Large</td>
+                        <td class="code-txt">xl</td>
+                        <td>&ge; 1200px</td>
+                    </tr>
+                    <tr>
+                        <td>Extra extra large</td>
+                        <td class="code-txt">xxl</td>
+                        <td>&ge; 1400px</td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
     </main>
 </body>

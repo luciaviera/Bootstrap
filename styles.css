@@ -105,6 +105,9 @@ pre {
 .link {
     color: var(--blue);
 }
+.coment {
+    color: #71E59D;
+}
 
 /*Colores titulos*/
 .subtitle {
@@ -142,6 +145,9 @@ p {
     font-size: 15px;
     color: #FFFF8F;
 }
+.highlight-txt-2 {
+    color: var(--skyBlue);
+}
 .highlight-txt {
     color: #E59D71;
     font-family: 'Roboto Mono', monospace;
@@ -151,4 +157,11 @@ p {
 /* Margen listas */
 .list-margin {
     margin-left: 2rem;
+}
+
+/* Tablas */
+td {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    text-align: center;
 }
