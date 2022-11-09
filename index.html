@@ -155,8 +155,24 @@
                     <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col-4"</span><span class="element">&gt;</span>Columna 1<span class="element">&lt;/div&gt;</span> <span class="coment"> /* Toma el tamaño de 4/12 */</span> </pre>
                 </code>
             </div>
+            <p>En caso de querer que haya otra celda que ocupe las "porciones" faltantes, basta con crear una columna mas sin especificar su tamaño.</p>
+            <p>Se le pueden especificar <i><span class="highlight-txt-2">breakpoints</span></i> (incluso mas de uno en una misma columna). La sintaxis seria: <span class="code-txt">col-<i>breakpoint</i>-<i>tamaño</i></span>. Esto permite que las columnas ocupen un espacio determinado dependiendo del viewport.</p>
+            <h4>Alineacion</h4>
+            <p>Las filas o columnas se pueden ubicar en el plano <i><span class="highlight-txt-2">vertical</span></i> respecto a los bordes del contenedor, de dos formas: aplicandole una clase a una columna especifica o a una fila (que se lo aplicaria a todas sus columnas). Estas son las clases: </p>
+            <p>En <span class="highlight-txt-2">filas</span>:</p>
+            <ul class="list-margin">
+                <li><span class="code-txt">align-items-start</span></li>
+                <li><span class="code-txt">align-items-center</span></li>
+                <li><span class="code-txt">align-items-end</span></li>
+            </ul>
+            <p>En las <span class="highlight-txt-2">columnas</span> inidviduales:</p>
+            <ul class="list-margin">
+                <li><span class="code-txt">align-self-start</span></li>
+                <li><span class="code-txt">align-self-center</span></li>
+                <li><span class="code-txt">align-self-end</span></li>
+            </ul>
             <h3>Breakpoints</h3>
-            <p>Sirven para determinar el layout según los distintos tamaños de viewport o dispositivos. </p>
+            <p>Sirven para determinar el layout según los distintos tamaños de viewport o dispositivos.</p>
             <table>
                 <caption><h4>Grid Tiers</h4></caption>
                 <colgroup></colgroup>
