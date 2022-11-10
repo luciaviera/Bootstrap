@@ -144,8 +144,8 @@
                 <button type="button" class="btn-copy">Copiar</button>
                 <code class="to-be-copy language-html" data-lang="html">
                     <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"row"</span><span class="element">&gt;</span>
-                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 1<span class="element">&lt;/div&gt;</span>
-                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 2<span class="element">&lt;/div&gt;</span>
+    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 1<span class="element">&lt;/div&gt;</span>
+    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>Columna 2<span class="element">&lt;/div&gt;</span>
 <span class="element">&lt;/div&gt;</span></pre>
                 </code>
             </div>
@@ -263,9 +263,102 @@
             <h2>Componentes</h2>
             <h3>Botones</h3>
             <p>Su clase es "<span class="code-txt">btn</span>" e incluye ademas algunos estilos predefinidos por lo que ademas se le puede sumar "<span class="code-txt">btn-<i>estilo</i></span>".
-            Los estilos predefinidos son:</p>
-            
+            <p>Los estilos predefinidos son:</p>
+            <!--Hacer mini pagina con los botones estilizados en bootstrap aqui-->
+            <h4>Contornos</h4>
+            <p>Tambien existen otros estilos predefinidos, estos sin relleno y con contornos. En este caso lo que se suma es "<span class="code-txt">btn-outline-<i>estilo</i></span>".</p>
+            <!--Hacer mini pagina con los botones estilizados en bootstrap aqui-->
+            <h4>Tamaños</h4>
+            <p>Tiene 3 tamaños predefinidos: Small (<span class="code-txt">btn-sm</span>), Regular (<span class="code-txt">btn-primary</span>) y Large (<span class="code-txt">btn-lg</span>).</p>
+            <!--Hacer mini pagina con los botones estilizados en bootstrap aqui-->
+            <h4>Deshabilitar</h4>
+            <p>Se puede deshabilitar un botnon al agregarle el <u>atributo</u> (no clase) "<span class="code-txt">disabled</span>". En caso de tratarse de un botnon use el elemento <span class="element">&lt;a&gt;</span> ahi <u>si</u> hay que agregar la clase "<span class="code-txt">.disabled</span>" (los links <span class="element">&lt;a&gt;</span> deshabilitados no deben contener el atributo "<span class="atr">href</span>" ).</p>
+            <h4>Block (ancho completo)</h4>
+            <p></p>
+            <h4>Alternar estados</h4>
+            <p></p>
+            <h3>Cards</h3>
+            <h3 class="subtitle">Tamaño</h3>
+            <p>Las cards vienen con un tamaño <i><span class="highlight-txt-2">predefinido</span></i> asignado en el <span class="element">&lt;div&gt;</span> de la card bajo el atributo "<span class="atr">style</span>", en caso de <u>eliminar</u> este la card toma el mayor ancho disponible.</p>
+            <h4>Grid</h4>
+            <p>Se puede determinar su tamaño de forma sencilla usando <i><span class="highlight-txt-2">grid</span></i>, los elementos (la card) se colocan dentro de una columna del grid de la siguiente forma:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"row"</span><span class="element">&gt;</span>
+                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"col"</span><span class="element">&gt;</span>
+                    <span class="element">&lt;div</span> <span class="atr">class=</span> <span class="value">"card"</span><span class="element">&gt;</span><span class="coment"> /* Se le eleimino el atributo "style" que le daba su estilo predefinido */</span>
+                    <span class="coment">/* Selementos de la card */</span>   
+                    <span class="element">&lt;/div&gt;</span>
+                    <span class="element">&lt;/div&gt;</span>
+<span class="element">&lt;/div&gt;</span></pre>
+                </code>
+            </div>
+            <h4>Usando Utilidades</h4>
+            <p>Se pueden usar las utilidades de tamaño de bootstrap, las cuales asumen que no tiene ancho especificado y permite asignarle <span class="code-txt">25%</span>, <span class="code-txt">50%</span>, <span class="code-txt">75%</span> y <span class="code-txt">100%</span> del ancho total, con la siguiente clase: <span class="code-txt">w-<i>porcentaje</i></span>. Esta se coloca en el <span class="element">&lt;div&gt;</span> de la card. </p>
+            <h4>Usando CSS personalizado</h4>
+            Se le cambian los valores al atributo "<span class="atr">style</span>" que se encuentra dentro de la <span class="element">&lt;div&gt;</span> de la card. alli colocamos o modificamos los valores de <span class="element">width:</span> a nuestro gusto.
+            <h3 class="subtitle">Contenido de las cards</h3>
+            <h4>Body</h4>
+            <!-- Aca iria un ejemplo de la card-->
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card"</span><span class="element">&gt;</span>
+                    <span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card-body"</span><span class="element">&gt;</span>
+                    <span class="coment">/* Aca iria algun texto */</span>
+                    <span class="element">&lt;div&gt;</span>
+<span class="element">&lt;div&gt;</span></pre>
+                </code>
+            </div>
+            <h4>Imagenes</h4>
+            <p>Para hacer una card con imagen basta con agregarle a la card ya hecha una etiqueta <span class="element">&lt;img&gt;</span> que contenga la clase "<span class="code-txt">card-img-top</span>".</p>
+            <!-- Aca iria un ejemplo de la card-->
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card"</span><span class="element">&gt;</span>
+                    <span class="element">&lt;img</span> <span class="atr">src=</span><span class="value">"..."</span> <span class="atr"> class=</span><span class="value">"card-img-top"</span> <span class="atr"> alt=</span><span class="value">"..."</span><span class="element">&gt;</span>
+                    <span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card-body"</span><span class="element">&gt;</span>
+                    <span class="coment">/* Aca iria algun texto */</span>
+                    <span class="element">&lt;div&gt;</span>
+<span class="element">&lt;div&gt;</span></pre>
+                </code>
+            </div>
+            <h4>Encabezado y pie de pagina</h4>
+            <!-- Aca iria un ejemplo de la card-->
+            <p>
+                Para agregarle a la card ya hecha un <i><span class="highlight-txt-2">encabezado</span></i> hay dos formas:
+                <ul class="list-margin">
+                    <li>se le agrega un <span class="element">&lt;div&gt;</span> arriba del todo (dentro del <span class="element">&lt;div&gt;</span> de la card) que contenga la clase "<span class="code-txt">card-header</span>", y dentro de este colocamos el texto del encabezado.</li>
+                    <li> se le agrega la clase "<span class="code-txt">card-header</span>" a un elemento <span class="element">&lt;h&gt;</span>(un titulo).</li>
+                </ul>
+            <p>Para agregarle a la card ya hecha un <i><span class="highlight-txt-2">pie de pagina</span></i> basta con hacer un <span class="element">&lt;div&gt;</span> al final del <span class="element">&lt;div&gt;</span> de la card, que contenga la clase "<span class="code-txt">card-header</span>", y dentro de este colocamos el texto del pie de pagina. </p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card"</span><span class="element">&gt;</span>
+<span class="element">&lt;div</span> <span class="atr">class=</span><span class="value">card-header</span><span class="element">&gt;</span>
+<span class="coment">/* Iria el texto de encabezado */</span>
+<span class="element">&lt;div&gt;</span>
+                    <span class="element">&lt;div</span><span class="atr"> class= </span> <span class="value">"card-body"</span><span class="element">&gt;</span>
+                    <span class="coment">/* Aca iria algun texto */</span>
+                    <span class="element">&lt;div&gt;</span>
+<span class="element">&lt;div</span> <span class="atr">class=</span><span class="value">card-footer</span><span class="element">&gt;</span>
+<span class="coment">/* Iria el texto de pie de pagina */</span>
+<span class="element">&lt;div&gt;</span>
+<span class="element">&lt;div&gt;</span></pre>
+                </code>
+            </div>
+            <p>Hay un tipo especial de pie de pagina que sera para <i><span class="highlight-txt-2">quotes</span></i> que corresponde a la clase "<span class="code-txt">blockquote-footer</span>" y se ve asi: </p>
+            <!-- Aca iria un ejemplo de la card-->
+            <h3 class="subtitle">Horizontales</h3>
+            <!-- Aca iria un ejemplo de la card-->
+            <p>Bootstrap permite hacer cards horizontales responsive, que pueden convertirse en verticales dependiendo del tamaño del viewport. Para esto hace uso de grid, donde por ejemplo en una columna se coloca la imagen y en otra el body de la card. Es <u>necesario</u> agregar la clase <span class="code-txt">g-0</span> a la fila ("<span class="code-txt">row</span>") para que esto funcione.</p>
+            <p>Para hacerlo <i><span class="highlight-txt-2">responsive</span></i> y que se haga vertical basta con especificar el <i>breakpoint</i> en la columna ("<span class="code-txt">col</span>"). </p>
         </section>
     </main>
 </body>
 </html>
+
+
