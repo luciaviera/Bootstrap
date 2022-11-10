@@ -242,13 +242,13 @@
             <h2>Utilidades</h2>
             <h3>Espaciado</h3>
             <h4>Margenes y Padding</h4>
-            <p>Al agregarlos en la clase de un elemento, se le asigna a este.</p>
-            <p>Las clases son:</p>
+            <p>Al agregarlos en la clase de un elemento, se le asigna a este. Su sintaxis seria <span class="code-txt"><i>propiedadLugar</i>-<i>valor</i></span></p>
+            <p>Donde las <i>propiedades</i> son:</p>
             <ul class="list-margin">
                 <li><span class="code-txt">m</span>  --> para <i><span class="highlight-txt-2">margenes</span></i></li>
                 <li><span class="code-txt">p</span>  --> para <i><span class="highlight-txt-2">padding</span></i></li>
             </ul>
-            <p>Para asignar en que lugar se coloca, tenemos las siguientes clases:</p>
+            <p>Los <i>lugares</i> donde se colocan:</p>
             <ul class="list-margin">
                 <li><span class="code-txt">t</span>  --> top </li>  
                 <li><span class="code-txt">b</span>  --> bottom</li>  
@@ -258,6 +258,7 @@
                 <li><span class="code-txt">y</span>  -->En los ejes y </li>  
                 <li> --> </li>
             </ul>
+            <p>Y los <i>valores</i> van de <span class="code-txt">0</span> a <span class="code-txt">5</span>.</p>
         </section>
         <section>
             <h2>Componentes</h2>
@@ -356,6 +357,32 @@
             <!-- Aca iria un ejemplo de la card-->
             <p>Bootstrap permite hacer cards horizontales responsive, que pueden convertirse en verticales dependiendo del tamaño del viewport. Para esto hace uso de grid, donde por ejemplo en una columna se coloca la imagen y en otra el body de la card. Es <u>necesario</u> agregar la clase <span class="code-txt">g-0</span> a la fila ("<span class="code-txt">row</span>") para que esto funcione.</p>
             <p>Para hacerlo <i><span class="highlight-txt-2">responsive</span></i> y que se haga vertical basta con especificar el <i>breakpoint</i> en la columna ("<span class="code-txt">col</span>"). </p>
+            <h3 class="subtitle">Disposición de las Cards</h3>
+            <h4>Grupo de Cards</h4>
+            <p>Es util para crear un grupo de cards que tengan igual altura y ancho, y esten contenidas en un unico elemento. Cabe aclarar que no es responsive (Existe <u>otra forma</u> que si es responsive de hacer esto que seria usando grid en la card como se hace con las cards <i><span class="highlight-txt-2">horizontales</span></i> pero con mas columnas) </p>
+            <!-- Aca iria un ejemplo de la cards-->
+            <p>Para lograr esto basta con contener cada card dentro de un <span class="element">&lt;div&gt;</span> que tenga la clase "<span class="code-txt">card-group</span>".</p>
+            <h3 class="subtitle">Estilos de Cards</h3>
+            <h4>Color de fondo y texto</h4>
+            <!-- Aca iria un ejemplo de la cards-->
+            <p>Para cambiar el color de fondo y/o texto de las cards se les puede agregar alguna de las siguientes clases:</p>
+            <ul class="list-margin">
+                <li><span class="code-txt">text-bg-<i>colorPredefinido</i></span> --> Establece el color de fondo y del texto al <i>colorPredefinido</i>. </li>
+                <li><span class="code-txt">text-<i>colorPredefinido</i></span> --> Establece el color del texto al <i>colorPredefinido</i>. </li>
+                <li><span class="code-txt">bg-<i>colorPredefinido</i></span> --> Establece el color de fondo al <i>colorPredefinido</i>. </li>
+            </ul>
+            <h4>Bordes</h4>
+            <!-- Aca iria un ejemplo de la cards-->
+            <p>Se le puede cambiar el color de borde a la card con la siguiente clase: "<span class="code-txt">border-<i>color</i></span>"</p>
+        </section>
+        <section>
+            <h2>Contenido</h2>
+            <h3>Tipografía</h3>
+            <h3 class="subtitle">Títulos</h3>
+            <p>De forma preestablecida se usan los titulos <span class="element">&lt;h1&gt;</span> a <span class="element">&lt;h6&gt;</span> de Bootstrap. </p>
+            <p>Ademas se pueden usar las clases: <span class="code-txt">.h1</span> a <span class="code-txt">.h6</span> si se quiere que un texto se vea como titulo pero no aparezxca asi en el DOM.</p>
+            <!-- Ejemplos de tamaños de titulos-->
+            Todos estos son responsive.
         </section>
     </main>
 </body>

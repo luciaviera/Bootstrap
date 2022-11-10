@@ -110,7 +110,7 @@ pre {
     color: #71E59D;
 }
 
-/*Colores titulos*/
+/* Titulos */
 .subtitle {
     color: var(--purple);
     margin-bottom: 0.5rem;
@@ -128,6 +128,7 @@ h4 {
 h3 {
     color: var(--purple);
     margin-bottom: 0.5rem;
+    font-size: 22px;
 }
 h2{
     margin-bottom: 1rem;
