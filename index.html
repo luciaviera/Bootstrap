@@ -382,7 +382,56 @@
             <p>De forma preestablecida se usan los titulos <span class="element">&lt;h1&gt;</span> a <span class="element">&lt;h6&gt;</span> de Bootstrap. </p>
             <p>Ademas se pueden usar las clases: <span class="code-txt">.h1</span> a <span class="code-txt">.h6</span> si se quiere que un texto se vea como titulo pero no aparezxca asi en el DOM.</p>
             <!-- Ejemplos de tamaños de titulos-->
-            Todos estos son responsive.
+            Todos estos son responsive.|
+            <h3 class="subtitle">Títulos Display</h3>
+            <p>Titulos mas grandes, con las clases: <span class="code-txt">display-<i>número</i></span>, yendo los numeros del <span class="code-txt">1</span> al <span class="code-txt">6</span>.</p>
+            <!-- Ejemplos de tamaños de titulos-->
+            <h3 class="subtitle">Elementos de texto</h3>
+            Para usar de forma <u><i>semantica</i></u> tenemos los siguientes:
+            <ul class="list-margin">
+                <li><i><span class="highlight-txt-2">Highlight</span></i> --> <span class="element">&lt;mark&gt;</span>texto<span class="element">&lt;/mark&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Eliminado</span></i>  --> <span class="element">&lt;del&gt;</span>texto<span class="element">&lt;/del&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Tachado</span></i>  --> <span class="element">&lt;s&gt;</span>texto<span class="element">&lt;/s&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Complemento</span></i> --> <span class="element">&lt;ins&gt;</span>texto<span class="element">&lt;/ins&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Subrayado</span></i>  --> <span class="element">&lt;u&gt;</span>texto<span class="element">&lt;/u&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Letra chica</span></i>  --> <span class="element">&lt;small&gt;</span>texto<span class="element">&lt;/small&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Negrita</span></i>  --> <span class="element">&lt;strong&gt;</span>texto<span class="element">&lt;/strong&gt;</span></li>
+                <li><i><span class="highlight-txt-2">Cursiva</span></i>  --> <span class="element">&lt;em&gt;</span>texto<span class="element">&lt;/em&gt;</span></li>
+            </ul>
+            <p>En caso de buscar <u><i>estilizar</i></u> usar las siguientes clases:</p>
+            <ul class="list-margin">
+                <li><i><span class="highlight-txt-2">Highlight</span></i> --> <span class="code-txt">.mark</span></li>
+                <li><span class="highlight-txt-2">Letra chica</span></i>  --> <span class="code-txt">.small</span></li>
+                <li><i><span class="highlight-txt-2">Subrayado</span></i>  --> <span class="code-txt">.text-decoration-undeerline</span></li>
+                <li><i><span class="highlight-txt-2">Tachado</span></i>  --> <span class="code-txt">.text-decoration-through</span></li>
+            </ul>
+            <h3 class="subtitle">Blockquotes</h3>
+            <p>Para citar bloques de contenido de otras fuentes:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;blockquote</span> <span class="atr">class=</span> <span class="value">"blockquote"</span><span class="element">&gt;</span>
+                    <span class="coment">/* Aqui iria una quote */</span>
+<span class="element">&lt;/blockquote&gt;</span></pre>
+                </code>
+            </div>
+            <p>En caso de querer nombrar la <i><span class="highlight-txt-2">fuente</span></i>, HTML requiere que se haga afuera de <span class="element">&lt;blockquote&gt;</span> y dentro de <span class="element">&lt;figcaption&gt;</span>. Por lo que se envuelven en el elemento <span class="element">&lt;figure&gt;</span> de la siguiente forma:</p>
+            <div class="code">
+                <button type="button" class="btn-copy">Copiar</button>
+                <code class="to-be-copy language-html" data-lang="html">
+                    <pre><span class="element">&lt;figure&gt;</span>
+                    <span class="element">&lt;blockquote</span> <span class="atr">class=</span> <span class="value">"blockquote"</span><span class="element">&gt;</span>
+                    <span class="coment">/* Aqui iria una quote */</span>
+                    <span class="element">&lt;/blockquote&gt;</span>
+                    <span class="element">&lt;figcaption</span> <span class="atr">class=</span><span class="value">"blockquote-footer"</span><span class="element">&gt;</span>
+                    <span class="coment"> /* La fuente de la quote */</span>
+                    <span class="element">&lt;/figcaption&gt;</span>
+<span class="element">&lt;/figure&gt;</span>
+</pre>
+                </code>
+            </div>
+            <!--Ejemplo de blockquote con fuente-->
+
         </section>
     </main>
 </body>
